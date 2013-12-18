@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="lumbendil_shared_routers.base_router" class="Symfony\Bundle\FrameworkBundle\Routing\Router" abstract="true">
+            <tag name="monolog.logger" channel="router"/>
+            <argument type="service" id="service_container"/>
+            <argument />
+            <argument />
+            <argument />
+            <argument type="service" id="monolog.logger.router" on-invalid="ignore"/>
+        </service>
+
+        <service id="lumbendil_shared_routers.base_request_context"
+                 class="Lumbendil\SharedRoutersBundle\Routing\ConfigurableRequestContext"
+                 parent="router.request_context" public="false" abstract="true" />
+    </services>
+</container>

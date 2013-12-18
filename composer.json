@@ -1,0 +1,14 @@
+{
+    "name": "lumbendil/shared-routers-bundle",
+    "authors": [
+        {
+            "name": "Roger Llopart Pla",
+            "email": "lumbendil@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-0": {"Lumbendil\\SharedRoutersBundle": ""}
+    },
+    "target-dir": "Lumbendil/SharedRoutersBundle"
+}
