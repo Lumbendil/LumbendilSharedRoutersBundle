@@ -1,5 +1,7 @@
 {
     "name": "lumbendil/shared-routers-bundle",
+	"license": "MIT",
+	"description": "A Symfony2 Bundle to be able to define multiple routers in order to generate paths.",
     "authors": [
         {
             "name": "Roger Llopart Pla",
